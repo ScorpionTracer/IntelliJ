@@ -14,7 +14,7 @@ public class Main {
         System.out.println("Введите второе число");
         int b = scanner.nextInt();
         int result = 0;
-        //Это проба с IDEA
+        //Это проба IDEA
         if (operation == 1) {
             result = a + b;
             System.out.println(String.format("Результат = %s ", result));
