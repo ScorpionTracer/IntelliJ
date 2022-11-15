@@ -2,9 +2,10 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Main {
+public class Calc_with_if {
 
     public static void main(String[] args) throws Exception {
+
         System.out.println("Введите операцию:\n1. Сложение\n2. Вычитание\n3. Умножение\n4. Деление");
         var scanner = new Scanner(System.in);
         int operation = scanner.nextInt();
@@ -31,3 +32,6 @@ public class Main {
         System.out.println(String.format("Результат = %f ", result));
     }
 }
+
+
+
