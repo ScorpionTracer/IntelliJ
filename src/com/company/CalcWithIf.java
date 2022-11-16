@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Calc_with_if {
+public class CalcWithIf {
 
     public static void main(String[] args) throws Exception {
 
@@ -13,7 +13,7 @@ public class Calc_with_if {
         double a = scanner.nextDouble();
         System.out.println("Введите второе число");
         double b = scanner.nextDouble();
-        double result = 0;
+        double result;
         if (operation == 1) {
             result = a + b;
         } else if (operation == 2) {
@@ -29,7 +29,7 @@ public class Calc_with_if {
         } else {
             throw new Exception("Введите правильную команду");
         }
-        System.out.println(String.format("Результат = %f ", result));
+        System.out.printf("Результат = %f", result);
     }
 }
 

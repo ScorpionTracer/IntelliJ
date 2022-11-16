@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Calc_switch {
+public class CalcSwitch {
     public static void main(String[] args) {
 
         System.out.println("Введите операцию:\n1. Сложение\n2. Вычитание\n3. Умножение\n4. Деление");
@@ -25,7 +25,9 @@ public class Calc_switch {
                 break;
             case 4:
                 if (b == 0) {
-                    throw new ArithmeticException("На ноль делить нельзя");
+                    //throw new ArithmeticException("На ноль делить нельзя");
+                    System.out.println("На ноль делить нельзя");
+                    break;
                 } else {
                     result = a / b;
                 }
@@ -34,6 +36,6 @@ public class Calc_switch {
                 System.out.println("Выберите правильную команду");
                 break;
         }
-        System.out.println(String.format("Результат = %f ", result));
+        System.out.printf("Результат = %f ", result);
     }
 }
